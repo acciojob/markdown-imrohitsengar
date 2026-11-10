@@ -1,12 +1,135 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  text-align: center;
+  padding: 12px;
+  background-color: #16213e;
+  color: #27aedb;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-panel {
+  border-right: 2px solid #27aedb;
+}
+
+.panel-header {
+  text-align: center;
+  padding: 8px;
+  background-color: #0f3460;
+  color: #e0e0e0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.editor,
+.textarea {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #1a1a2e;
+  color: #e0e0e0;
+}
+
+.preview {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #1a1a2e;
+}
+
+/* Markdown rendered content styles */
+.preview h1, .preview h2, .preview h3 {
+  color: #27aedb;
+  margin: 12px 0 8px;
+}
+
+.preview h1 { font-size: 1.8rem; border-bottom: 1px solid #27aedb; padding-bottom: 6px; }
+.preview h2 { font-size: 1.4rem; }
+.preview h3 { font-size: 1.2rem; }
+
+.preview p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.preview a {
+  color: #27aedb;
+  text-decoration: underline;
+}
+
+.preview blockquote {
+  border-left: 4px solid #27aedb;
+  padding: 8px 16px;
+  margin: 12px 0;
+  background-color: #16213e;
+  color: #b0b0b0;
+}
+
+.preview code {
+  background-color: #0f3460;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 13px;
+}
+
+.preview pre {
+  background-color: #0f3460;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 12px 0;
+}
+
+.preview pre code {
+  background: none;
+  padding: 0;
+}
+
+.preview ul, .preview ol {
+  padding-left: 24px;
+  margin: 8px 0;
+}
+
+.preview li {
+  margin: 4px 0;
+}
+
+.preview img {
+  max-width: 100%;
+  border-radius: 4px;
 }

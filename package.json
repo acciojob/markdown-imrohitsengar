@@ -5,21 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --no-color 2>output.txt",
-    "start": "webpack-dev-server --mode development --watch --open --hot",
+    "start": "webpack serve --mode development --open --hot",
     "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^9.5.0",
     "css-loader": "^4.3.0",
+    "cypress": "^9.5.0",
     "jest-junit": "^11.1.0",
     "jsdom": "^16.4.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-markdown": "^8.0.7",
     "style-loader": "^1.2.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^4.10.0"
   },
   "jest": {
     "moduleNameMapper": {
@@ -45,11 +46,11 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.5.0",
-    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-plugin": "^5.6.8",
     "jest": "^26.4.2",
     "react-test-renderer": "^16.13.1",
-    "webpack": "^4.44.2",
-    "webpack-dev-server": "^3.11.0",
+    "webpack": "^5.112.2",
+    "webpack-dev-server": "^4.15.2",
     "xml-js": "^1.6.11"
   }
 }
